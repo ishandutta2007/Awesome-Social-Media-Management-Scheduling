@@ -1,8 +1,8 @@
-# Awesome-Social-Media-Management-Scheduling
+# Awesome-Speech-Conversation-Analytics
 
-# Awesome Social Media Management & Scheduling
+# Awesome Speech & Conversation Analytics
 
-> A curated list of top Social Media Management and Scheduling platforms — both SaaS/Hosted commercial solutions and open-source alternatives for planning, publishing, and analyzing content across social networks.
+> A curated list of top Speech and Conversation Analytics platforms — both SaaS/Hosted commercial solutions and open-source alternatives for transcribing, analyzing, and extracting insights from voice conversations, sales calls, and customer interactions.
 > 🌟 Star this repo if you find it useful! 🌟
 
 ---
@@ -10,20 +10,25 @@
 ## 📋 Table of Contents
 
 - [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [Hootsuite](#hootsuite)
-  - [Buffer](#buffer)
-  - [Sprout Social](#sprout-social)
-  - [Later](#later)
-  - [Agorapulse](#agorapulse)
-  - [SocialPilot](#socialpilot)
-  - [Zoho Social](#zoho-social)
+  - [Gong](#gong)
+  - [Chorus by ZoomInfo](#chorus-by-zoominfo)
+  - [Clari Copilot](#clari-copilot)
+  - [Invoca](#invoca)
+  - [CallMiner](#callminer)
+  - [Observe.AI](#observeai)
+  - [Verint](#verint)
+  - [Tethr](#tethr)
+  - [Balto](#balto)
 - [Open-Source Software](#-open-source-software)
-  - [Mixpost](#mixpost)
-  - [Postiz](#postiz)
-  - [Postmill](#postmill)
-  - [TryPost](#trypost)
-  - [PostSider](#postsider)
-  - [Brightbean Studio](#brightbean-studio)
+  - [Percept](#percept)
+  - [CallHarness SDK](#callharness-sdk)
+  - [CallSense (ML-voice-lead-analysis)](#callsense-ml-voice-lead-analysis)
+  - [diarizers](#diarizers)
+  - [Debrief](#debrief)
+  - [Surivoice](#surivoice)
+  - [VoiceSummary](#voicesummary)
+  - [WhoSpeaks](#whospeaks)
+  - [CohereX](#coherex)
 - [Comparison at a Glance](#-comparison-at-a-glance)
 - [Contributing](#-contributing)
 
@@ -31,99 +36,115 @@
 
 ## 🟦 SaaS / Hosted Platforms
 
-Commercial, cloud-hosted Social Media Management and Scheduling platforms. These are not open-source but are included as reference points for feature comparison.
+Commercial, cloud-hosted Speech and Conversation Analytics platforms. These are not open-source but are included as reference points for feature comparison.
 
-### Hootsuite
-**Type:** Enterprise social media management suite
-Hootsuite is the long-standing enterprise standard for social media management, offering scheduling, monitoring, analytics, and team collaboration across major networks. It is known for its breadth of integrations and robust approval workflows, though pricing scales significantly for larger teams and advanced analytics.
+### Gong
+**Type:** Revenue intelligence and sales conversation analytics
+Gong is the category-defining revenue intelligence platform, analyzing sales calls, emails, and meetings to surface deal risks, coaching opportunities, and revenue insights. It provides call recording, transcription, sentiment analysis, talk-time metrics, and deal progression tracking. An MCP server integration is available for accessing Gong's analytics through AI assistants [citation:8].
 
-### Buffer
-**Type:** Simple scheduling with clean interface
-Buffer is widely adopted for its straightforward scheduling experience and clean interface. It supports scheduling across major platforms, basic analytics, and team collaboration. Positioned as an accessible entry point for individuals and small teams, with pricing based on channels rather than users.
+### Chorus by ZoomInfo
+**Type:** Conversation intelligence for sales teams
+Chorus (part of ZoomInfo) provides call recording, transcription, and analysis for sales conversations, with deal risk detection, coaching insights, and integration with CRM data. Positioned as a direct competitor to Gong.
 
-### Sprout Social
-**Type:** Enterprise social media management with deep analytics
-Sprout Social provides comprehensive social media management with strong analytics, listening, and engagement tools. It is often compared to Hootsuite for enterprise use cases, with a reputation for superior reporting and a more modern interface.
+### Clari Copilot
+**Type:** Revenue operations with conversation intelligence
+Clari Copilot (formerly Wingman) provides call recording, transcription, and real-time coaching for sales teams, integrated into Clari's broader revenue operations platform.
 
-### Later
-**Type:** Visual-first scheduling for Instagram and beyond
-Later specializes in visual content planning, particularly for Instagram, with a drag-and-drop calendar and media library. It has expanded to support other platforms, making it popular for visual-first brands and influencers.
+### Invoca
+**Type:** Call intelligence for marketing and contact centers
+Invoca specializes in analyzing inbound phone calls for marketing attribution, lead qualification, and contact center optimization. It uses AI to extract intent, sentiment, and outcome from voice conversations.
 
-### Agorapulse
-**Type:** Social media management with inbox and reporting
-Agorapulse combines scheduling, a unified social inbox, and reporting in a single platform. It is positioned as a mid-market alternative to Hootsuite and Sprout Social, with a focus on ease of use and team collaboration.
+### CallMiner
+**Type:** Enterprise speech analytics
+CallMiner provides AI-powered speech and text analytics for contact centers, covering compliance, agent performance, and customer experience. It is a long-standing enterprise standard for large-scale conversation analytics.
 
-### SocialPilot
-**Type:** Budget-friendly scheduling for agencies
-SocialPilot offers scheduling, analytics, and team collaboration at a competitive price point, targeting agencies and small businesses. It supports major platforms with a straightforward interface.
+### Observe.AI
+**Type:** Contact center AI with agent assistance
+Observe.AI provides conversation intelligence for contact centers, including automated QA, agent coaching, and real-time assistance. Focused on improving agent performance and customer satisfaction at scale.
 
-### Zoho Social
-**Type:** Social media management within Zoho ecosystem
-Zoho Social provides scheduling, monitoring, and analytics as part of the broader Zoho suite. It is the natural choice for organizations already using Zoho CRM or other Zoho products, with tight integration into the Zoho ecosystem.
+### Verint
+**Type:** Enterprise workforce engagement and speech analytics
+Verint provides speech analytics as part of its broader workforce engagement management suite, covering compliance, quality, and customer experience for large contact centers.
+
+### Tethr
+**Type:** AI-powered conversation analytics for contact centers
+Tethr analyzes customer conversations to surface insights on effort, sentiment, and operational performance. Positioned for enterprises wanting to understand what drives customer loyalty and dissatisfaction from voice interactions.
+
+### Balto
+**Type:** Real-time guidance and conversation analytics
+Balto provides real-time coaching and guidance for contact center agents during live calls, alongside post-call analytics. Focused on improving agent performance through in-the-moment suggestions.
 
 ---
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven Social Media Management and Scheduling tools. The open-source ecosystem has matured significantly, with several actively maintained alternatives to Buffer and Hootsuite.
+Self-hosted, community-driven Speech and Conversation Analytics tools. The open-source ecosystem is **fragmented** across transcription pipelines, diarization libraries, call analytics SDKs, and sales-focused analysis platforms.
 
-### Mixpost
-**Stack:** PHP / Laravel / MySQL / Redis | **License:** MIT (Lite) / Commercial (Pro)  
-Mixpost is a self-hosted social media management tool positioned as an open-source alternative to Buffer and Hootsuite [citation:2][citation:8]. The **Lite** version is free and open-source, covering scheduling, calendar, media library, and basic analytics for Facebook Pages, X (Twitter), and Mastodon [citation:4]. The **Pro** version is a one-time license that unlocks every platform (12+ networks), unlimited social accounts, workspaces, users, API, MCP, and webhooks [citation:4][citation:8]. The **Enterprise** tier adds subscription management and white-label branding for running Mixpost as your own SaaS [citation:4]. Deployment requires a Laravel-based PHP application with MySQL and Redis, and it is available via Docker or Railway one-click deploy [citation:2].  
-**Best for:** Agencies and businesses wanting a proven, self-hosted social media manager with a clear upgrade path from a free core to a full-featured one-time license.
+### Percept
+**Stack:** Python | **License:** Open Source (per PyPI)
+Percept is a local-first conversation intelligence pipeline that captures, transcribes, and analyzes spoken conversations, with a web dashboard and MCP server for AI assistant integration [citation:1]. Features include wake-word detection, speaker authorization/revocation, full-text and semantic search across transcripts, entity graph extraction, and a three-tier transcription strategy (Omi on-device, faster-whisper local, or webhook sources). It supports syncing from Granola, Zoom, and ChatGPT Actions. The MCP server exposes tools including `percept_search`, `percept_transcripts`, and `percept_speakers` for Claude Desktop integration [citation:1]. **Note:** Percept is designed for personal/team conversation capture (meetings, voice notes) rather than contact center analytics.
 
-### Postiz
-**Stack:** TypeScript / Next.js / NestJS / PostgreSQL / Redis | **License:** AGPL-3.0  
-Postiz is one of the most popular open-source social media scheduling tools, with 36,000+ GitHub stars and active development [citation:5]. It offers scheduling across multiple platforms with AI features, analytics, team collaboration, and a NodeJS SDK for automation [citation:14]. The project states there is **no difference between the hosted and self-hosted versions** [citation:14]. It integrates with N8N, Make.com, and Zapier for workflow automation [citation:14]. Deploys via Docker with PostgreSQL and Redis.  
-**Best for:** Teams wanting a feature-rich, actively developed open-source Buffer alternative with strong automation and AI capabilities, accepting AGPL licensing.
+### CallHarness SDK
+**Stack:** Python | **License:** Open Source (per PyPI)
+CallHarness is an open-source SDK for **voice AI agent call analytics**, sending agent calls to a self-hosted server that runs post-call LLM analysis (summary, sentiment, outcome, why a call transferred or didn't complete) and displays results on a dashboard [citation:2]. It integrates with Pipecat pipelines, capturing per-turn STT/LLM/TTS latency, interruptions, tool calls, and transfers. Transcripts stay on your own infrastructure. **Limitation:** Focused on analyzing AI agent calls, not human-to-human sales conversations.
 
-### Postmill
-**Stack:** Next.js / NestJS / PostgreSQL / Inngest / Redis | **License:** Open Source (per repository)  
-Postmill is an AI-native social media management platform supporting **45+ channels** including X, LinkedIn, Reddit, Instagram, Facebook, Threads, YouTube, TikTok, Pinterest, Discord, Slack, Mastodon, Bluesky, and many more [citation:10]. It distinguishes itself with a governed **BYOK AI layer** (30 providers) with guardrails and spend caps, **46 built-in media tools** for design and generation, persisted multi-channel analytics, a cross-channel comment inbox, and a natural-language agent that operates the platform [citation:10]. Security features include AES-256-GCM encryption at rest, SSRF checks, CSRF protection, and per-channel VPN routing [citation:10]. Self-hosted via Docker with a published image.  
-**Best for:** Teams wanting the most feature-dense open-source social platform, particularly those needing AI-assisted content creation, multi-brand management, and broad channel support.
+### CallSense (ML-voice-lead-analysis)
+**Stack:** Python / FastAPI / React | **License:** Open Source (per GitHub)
+CallSense is a self-hosted, deterministic **sales call lead-scoring engine** that turns recorded call transcripts into explainable lead scores, objection detection, buyer intent signals, and next-best-action recommendations [citation:3][citation:13]. Every score component is traceable to exact transcript quotes — a rep can interrogate why a lead scored 73.9/100. It runs on Python 3.11+ with no GPU, no model download, and no external database. The analysis engine is pure Python (no PyTorch/spaCy), processing a 40-turn call in ~2.4ms [citation:3]. **Trade-off:** Requires transcripts as input (it does not transcribe audio); no real-time analysis; sentiment is lexicon-based by default with an optional transformer upgrade.
 
-### TryPost
-**Stack:** PHP / Laravel / PostgreSQL / Redis | **License:** Open Source (per Railway)  
-TryPost is a self-hostable social media scheduler positioned as an alternative to Buffer, Hootsuite, and Later [citation:7]. It supports ten platforms including X, LinkedIn, Instagram, TikTok, and YouTube, with AI captions, an AI carousel generator, brand profiles, team workspaces, a REST API, and a built-in MCP server for AI assistants like Claude and Cursor [citation:7]. It ships as a single Docker image bundling the web app, queue workers, scheduler, and WebSocket server, requiring only PostgreSQL and Redis [citation:7].  
-**Best for:** Teams wanting a straightforward self-hosted scheduler with AI-assisted content creation and MCP integration, deployable as a single container.
+### diarizers
+**Stack:** Python / PyTorch | **License:** Apache-2.0
+diarizers is a unified open-source ASR, speaker diarization, and DiarizationLM post-processing package implementing the algorithms from Google's DiarizationLM papers [citation:4]. It combines Whisper or Qwen ASR, pyannote segmentation, SpeechBrain embeddings, spectral clustering, and LLM-based diarization refinement (via DiarizationLM-Gemma-4-E4B). Supports CPU (llama.cpp GGUF) and GPU (Safetensors) inference. **Focus:** Speaker diarization quality rather than conversation analytics — it produces who-said-what transcripts, not sentiment or outcome analysis.
 
-### PostSider
-**Stack:** TypeScript / NestJS / Next.js / PostgreSQL / Temporal | **License:** Open Source (per GitHub)  
-PostSider is an open-source social media scheduling platform supporting **30+ platforms**, with a public API, Node SDK, and MCP server for AI agents [citation:3]. It uses **Temporal** for durable scheduling, ensuring background jobs are not tied to a single web-process lifetime, and implements each platform behind a common provider interface [citation:3]. Self-hosting is supported with Docker Compose, with optional AI and billing features that can be disabled [citation:3].  
-**Best for:** Developers wanting a programmable, API-first scheduling platform with durable Temporal-based workflows and broad platform coverage.
+### Debrief
+**Stack:** Electron / React / Python | **License:** Open Source (per GitHub)
+Debrief is a privacy-first conversation analysis desktop app that transcribes audio/video locally using faster-whisper, performs speaker diarization with pyannote.audio 3.1, and runs AI analysis via local Ollama or your choice of OpenAI/Anthropic/Groq/Gemini/OpenRouter . Model weights are bundled, so no HuggingFace token is required at runtime. Cross-platform (macOS, Windows, Linux) with FFmpeg bundled. **Trade-off:** Desktop app rather than a server platform; analysis depth depends on the LLM you connect.
 
-### Brightbean Studio
-**Stack:** Python / Django / PostgreSQL / Redis | **License:** Open Source (per GitHub)  
-Brightbean Studio is a self-hostable social media management platform supporting 10+ platforms including Facebook, Instagram, LinkedIn, TikTok, YouTube, Pinterest, Bluesky, and Mastodon [citation:11][citation:15]. It provides scheduling, publishing, and content management from a single dashboard, positioned as a free alternative to Buffer, Sendible, and SocialPilot [citation:11]. Deployment via Docker Compose with PostgreSQL and Redis, with support for S3-compatible storage [citation:15].  
-**Best for:** Django/Python-centric teams wanting a straightforward open-source social scheduler with broad platform support and Docker deployment.
+### Surivoice
+**Stack:** Python / Whisper / pyannote | **License:** Open Source (per PyPI)
+Surivoice is a local-first speech transcription tool with speaker diarization, taking video/audio files and outputting structured Markdown transcripts with timestamps [citation:9]. It uses faster-whisper for transcription and pyannote.audio for diarization, with GPU acceleration and CPU fallback. Provides both a GUI and CLI. **Trade-off:** Transcription and diarization only — no sentiment, outcome, or conversation analytics.
+
+### VoiceSummary
+**Stack:** Python / FastAPI / Next.js / PostgreSQL | **License:** MIT
+VoiceSummary is an open-source AI database for voice agent transcripts, providing call analysis, insights, extraction, and labeling [citation:7]. It offers API endpoints for call records, audio processing, AI data extraction pipelines, and agent comparisons. Use cases include call quality assessment, sentiment analysis, and structured data extraction from transcripts. **Focus:** Voice agent analytics rather than human sales conversation intelligence.
+
+### WhoSpeaks
+**Stack:** Python / PyTorch | **License:** Open Source (per PyPI)
+WhoSpeaks provides local, GPU-accelerated speaker diarization with a low-latency live preview path and a final high-accuracy transcription path [citation:6]. It is designed for sensitive audio (internal meetings, research interviews, legal/medical workflows) where sending raw conversation audio to another company is not acceptable. Includes a full-screen setup application, speaker library management, and Docker deployment. **Trade-off:** GPU-heavy; diarization accuracy degrades with background noise, crosstalk, and overlapping speech [citation:6].
+
+### CohereX
+**Stack:** Python | **License:** Open Source (per PyPI)
+CohereX wraps Cohere Transcribe ASR with word-level timestamps and speaker diarization, following the WhisperX pipeline design (VAD → ASR → forced alignment → diarization) [citation:14]. It supports 14 languages and outputs SRT, VTT, TXT, TSV, and JSON. Requires HuggingFace token for pyannote models. **Focus:** High-quality transcription and diarization rather than conversation analytics.
 
 ---
 
 ## 📊 Comparison at a Glance
 
-| Software | License | Stack | Platforms | AI Features | Self-Hosted | Best For |
-|----------|---------|-------|-----------|-------------|-------------|----------|
-| **Hootsuite** | Proprietary | Cloud | Major networks | Limited | ❌ | Enterprise social suite |
-| **Buffer** | Proprietary | Cloud | Major networks | Limited | ❌ | Simple scheduling |
-| **Mixpost** | MIT (Lite) / Pro | PHP/Laravel | 3 (Lite) / 12+ (Pro) | ❌ | ✅ | Self-hosted with upgrade path |
-| **Postiz** | AGPL-3.0 | TypeScript/NestJS | Multiple | ✅ | ✅ | Open-source Buffer alternative |
-| **Postmill** | Open Source | Next.js/NestJS | 45+ channels | ✅ BYOK + agent | ✅ | Feature-dense AI-native platform |
-| **TryPost** | Open Source | PHP/Laravel | 10 platforms | ✅ Captions/carousels | ✅ | Single-container scheduler + MCP |
-| **PostSider** | Open Source | TypeScript/Temporal | 30+ platforms | (Optional) | ✅ | Programmable API-first scheduling |
-| **Brightbean** | Open Source | Python/Django | 10+ platforms | (Check) | ✅ | Django-based broad platform support |
+| Software | License | Stack | Transcription | Diarization | Analytics | Self-Hosted | Best For |
+|----------|---------|-------|---------------|-------------|-----------|-------------|----------|
+| **Gong** | Proprietary | Cloud | ✅ | ✅ | ✅ Revenue intel | ❌ | Sales conversation intelligence |
+| **CallMiner** | Proprietary | Cloud | ✅ | ✅ | ✅ Enterprise | ❌ | Contact center speech analytics |
+| **Observe.AI** | Proprietary | Cloud | ✅ | ✅ | ✅ Agent coaching | ❌ | Contact center QA |
+| **Percept** | Open Source | Python | ✅ (Omi/faster-whisper) | ✅ (Speaker auth) | ✅ Search + MCP | ✅ | Personal/team conversation capture |
+| **CallHarness** | Open Source | Python | (Agent input) | (Turn-based) | ✅ Post-call LLM | ✅ | Voice AI agent call analytics |
+| **CallSense** | Open Source | Python/FastAPI | ❌ (Transcript input) | ❌ | ✅ Lead scoring | ✅ | Explainable sales lead scoring |
+| **diarizers** | Apache-2.0 | Python/PyTorch | ✅ (Whisper/Qwen) | ✅ Deep | ❌ | ✅ | High-quality diarization pipeline |
+| **Debrief** | Open Source | Electron/Python | ✅ Local Whisper | ✅ pyannote | ✅ LLM choice | ✅ (Desktop) | Privacy-first meeting analysis |
+| **VoiceSummary** | MIT | Python/FastAPI | (Agent input) | (Check) | ✅ AI extraction | ✅ | Voice agent transcript database |
+| **WhoSpeaks** | Open Source | Python/PyTorch | ✅ Live + final | ✅ Deep | ❌ | ✅ | Sensitive audio diarization |
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source Social Media Management or Scheduling tool that should be listed here, please open a pull request with:
+Contributions are welcome! If you know of an open-source Speech or Conversation Analytics tool that should be listed here, please open a pull request with:
 
 - Project name and URL
 - Brief description (1–2 sentences)
 - Stack and license
 - Why it stands out
 
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source. Note that the open-source ecosystem **splits** between accessible entry points with upgrade paths (Mixpost), feature-dense AI-native platforms (Postmill, Postiz), single-container simplicity (TryPost), and API-first programmability (PostSider). **Mixpost** offers the most traditional open-core model with a free Lite tier and one-time Pro license [citation:4]. **Postiz** is the most widely adopted with 36k+ stars [citation:5]. **Postmill** is the most feature-dense, covering 45+ channels with governed BYOK AI and 46 media tools [citation:10].
+Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source. Note that the open-source ecosystem **splits** across several layers: **transcription and diarization pipelines** (diarizers, Surivoice, WhoSpeaks, CohereX) that produce who-said-what transcripts; **conversation capture platforms** (Percept, Debrief) that add search and AI analysis on top; and **sales/agent analytics engines** (CallSense, CallHarness, VoiceSummary) that focus on lead scoring or agent performance. No single open-source project replicates Gong's full breadth of revenue intelligence, CRM integration, and team coaching, but combinations of Percept (capture) + CallSense (sales analysis) cover a meaningful subset of the workflow.
 
 ---
 
