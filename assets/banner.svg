@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070b14" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="accentPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <linearGradient id="accentBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="accentAmber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+
+    <!-- Subtle Card Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#111827" stop-opacity="0.85" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 42px;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      fill: #94a3b8;
+    }
+    .badge-pill {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      fill: #f8fafc;
+    }
+    .grid-line {
+      stroke: #334155;
+      stroke-opacity: 0.18;
+      stroke-width: 1;
+    }
+    
+    /* Dynamic background pulsing and flow */
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1) translate(0px, 0px); opacity: 0.28; }
+      50% { transform: scale(1.15) translate(-15px, 10px); opacity: 0.42; }
+    }
+    @keyframes pulseOrb2 {
+      0%, 100% { transform: scale(1) translate(0px, 0px); opacity: 0.22; }
+      50% { transform: scale(1.2) translate(20px, -15px); opacity: 0.38; }
+    }
+    @keyframes floatPill1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes floatPill2 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(7px); }
+    }
+    @keyframes dashCycle {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: -60; }
+    }
+
+    .orb1 { animation: pulseOrb 8s ease-in-out infinite; transform-origin: 200px 100px; }
+    .orb2 { animation: pulseOrb2 9s ease-in-out infinite; transform-origin: 1000px 250px; }
+    .float-item1 { animation: floatPill1 5s ease-in-out infinite; }
+    .float-item2 { animation: floatPill2 6s ease-in-out infinite; }
+    .data-flow-line {
+      stroke-dasharray: 6 6;
+      animation: dashCycle 3s linear infinite;
+    }
+  </style>
+
+  <!-- Deep Canvas Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Animated Ambient Glow Spheres (Layered safely in background) -->
+  <g>
+    <circle class="orb1" cx="220" cy="110" r="160" fill="#6366f1" filter="url(#glow)" />
+    <circle class="orb2" cx="980" cy="220" r="180" fill="#ec4899" filter="url(#glow)" />
+    <circle cx="600" cy="300" r="120" fill="#06b6d4" opacity="0.12" filter="url(#glow)" />
+  </g>
+
+  <!-- High-tech Background Grid Structure -->
+  <g>
+    <line x1="0" y1="60" x2="1200" y2="60" class="grid-line" />
+    <line x1="0" y1="120" x2="1200" y2="120" class="grid-line" />
+    <line x1="0" y1="180" x2="1200" y2="180" class="grid-line" />
+    <line x1="0" y1="240" x2="1200" y2="240" class="grid-line" />
+    <line x1="0" y1="300" x2="1200" y2="300" class="grid-line" />
+    <line x1="200" y1="0" x2="200" y2="360" class="grid-line" />
+    <line x1="400" y1="0" x2="400" y2="360" class="grid-line" />
+    <line x1="600" y1="0" x2="600" y2="360" class="grid-line" />
+    <line x1="800" y1="0" x2="800" y2="360" class="grid-line" />
+    <line x1="1000" y1="0" x2="1000" y2="360" class="grid-line" />
+  </g>
+
+  <!-- Decorative Orbiting Nodes & Flow Track in Background -->
+  <g opacity="0.5">
+    <path d="M 80,310 C 350,330 850,290 1120,310" fill="none" stroke="#64748b" stroke-width="1.5" class="data-flow-line" />
+    <path d="M 80,50 C 350,30 850,70 1120,50" fill="none" stroke="#64748b" stroke-width="1.5" class="data-flow-line" />
+  </g>
+
+  <!-- Foreground Title and Core Identity (Never covered by animation) -->
+  <g transform="translate(600, 110)">
+    <!-- Top Super-Badge -->
+    <g transform="translate(-160, -50)">
+      <rect width="320" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <circle cx="16" cy="14" r="5" fill="#10b981" />
+      <text x="32" y="19" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#38bdf8" letter-spacing="1">CURATED OPEN-SOURCE &amp; SAAS DIRECTORY</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="20" text-anchor="middle" class="title-text">
+      Social Media Management &amp; Scheduling
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="60" text-anchor="middle" class="subtitle-text">
+      Multi-Platform Planning • AI Automation • Unified Inbox • Social Listening &amp; Analytics
+    </text>
+  </g>
+
+  <!-- Interactive/Dynamic Status Pills (Positioned below title in lower third) -->
+  <g class="float-item1" transform="translate(180, 240)">
+    <rect width="180" height="44" rx="22" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.2" />
+    <circle cx="25" cy="22" r="8" fill="#38bdf8" opacity="0.3" />
+    <circle cx="25" cy="22" r="4" fill="#38bdf8" />
+    <text x="44" y="27" class="badge-pill">45+ Networks Sync</text>
+  </g>
+
+  <g class="float-item2" transform="translate(390, 240)">
+    <rect width="190" height="44" rx="22" fill="url(#cardGrad)" stroke="#a855f7" stroke-width="1.2" />
+    <circle cx="25" cy="22" r="8" fill="#a855f7" opacity="0.3" />
+    <circle cx="25" cy="22" r="4" fill="#a855f7" />
+    <text x="44" y="27" class="badge-pill">AI Agents &amp; MCP</text>
+  </g>
+
+  <g class="float-item1" transform="translate(610, 240)">
+    <rect width="190" height="44" rx="22" fill="url(#cardGrad)" stroke="#ec4899" stroke-width="1.2" />
+    <circle cx="25" cy="22" r="8" fill="#ec4899" opacity="0.3" />
+    <circle cx="25" cy="22" r="4" fill="#ec4899" />
+    <text x="44" y="27" class="badge-pill">Self-Hosted Docker</text>
+  </g>
+
+  <g class="float-item2" transform="translate(830, 240)">
+    <rect width="190" height="44" rx="22" fill="url(#cardGrad)" stroke="#10b981" stroke-width="1.2" />
+    <circle cx="25" cy="22" r="8" fill="#10b981" opacity="0.3" />
+    <circle cx="25" cy="22" r="4" fill="#10b981" />
+    <text x="44" y="27" class="badge-pill">Unified Social Inbox</text>
+  </g>
+
+  <!-- Border Accent Outline -->
+  <rect width="1200" height="360" rx="16" fill="none" stroke="#334155" stroke-width="1.5" />
+</svg>

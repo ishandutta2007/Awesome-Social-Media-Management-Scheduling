@@ -1,35 +1,51 @@
-# Awesome Social Media Management & Scheduling [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Social Media Management &amp; Scheduling" width="100%" />
+</p>
 
-> A curated list of top Social Media Management and Scheduling platforms — both commercial SaaS solutions and self-hosted open-source alternatives for multi-platform planning, automated publishing, unified inbox engagement, and cross-channel social analytics.
-> 🌟 Star this repo if you find it useful! 🌟
+# Awesome Social Media Management & Scheduling 🚀📱
 
----
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Social-Media-Management-Scheduling/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Social-Media-Management-Scheduling?style=flat-square&color=gold" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Social-Media-Management-Scheduling/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Social-Media-Management-Scheduling?style=flat-square&color=blue" alt="GitHub forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Social-Media-Management-Scheduling/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-CC0--1.0-green?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-## 📋 Table of Contents
-
-- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
-- [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-- [Open-Source Software](#-open-source-software)
-- [Feature Comparison Matrix](#-feature-comparison-matrix)
-- [Keywords & Related Concepts](#-keywords--related-concepts)
-- [Contributing](#-contributing)
-- [License](#-license)
-
----
-
-## 📈 Sector Overview & Market Dynamics
-
-The global social media management software market is valued at approximately **$23 billion to $36 billion** and is projected to expand at an aggressive Compound Annual Growth Rate (CAGR) of **16.5% to 23.8%**, surpassing $140 billion by the mid-2030s.
-
-The sector is **moderately to highly fragmented**: while top-tier enterprise suites (such as Sprout Social, Hootsuite, and Sprinklr) command large enterprise accounts via deep social listening and CRM governance, the market does not exhibit winner-take-all dynamics. Instead, intense feature competition, platform API shifts, and creator-economy needs have created a thriving landscape of specialized mid-market SaaS providers, agency-focused schedulers, and high-growth open-source self-hosted alternatives.
+> 🌐 A curated list of top **Social Media Management and Scheduling** platforms — both commercial SaaS suites and self-hosted open-source alternatives for multi-platform planning, automated publishing, unified inbox engagement, and cross-channel social analytics.  
+> ⭐ **Star this repository if you find it helpful!** ⭐
 
 ---
 
-## 🟦 SaaS / Hosted Platforms
+## 📋 Table of Contents 📑
 
-Below is a comparison of leading cloud-hosted commercial social media management platforms, sorted descending by company scale (enterprise valuation / annual revenue).
+- [📈 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics-)
+- [🟦 SaaS / Hosted Platforms](#-saas--hosted-platforms-)
+- [🟩 Open-Source Software](#-open-source-software-)
+- [📊 Feature Comparison Matrix](#-feature-comparison-matrix-)
+- [🔍 Keywords & Related Concepts](#-keywords--related-concepts-)
+- [🤝 Contributing](#-contributing-)
+- [💖 Support & Community](#-support--community-)
+- [⭐ Star History](#-star-history)
+- [📄 License](#-license-)
 
-| Platform | Starting Tier Pricing | Free Tier / Trial Limit | Company Scale (Revenue / Valuation) | Key Focus & Strengths |
+---
+
+## 📈 Sector Overview & Market Dynamics 📊
+
+The global social media management software market is valued at approximately **$23 billion to $36 billion** and is projected to expand at an aggressive Compound Annual Growth Rate (CAGR) of **16.5% to 23.8%**, surpassing **$140 billion** by the mid-2030s.
+
+The sector is **moderately to highly fragmented**: while top-tier enterprise suites (such as Sprout Social, Hootsuite, and Sprinklr) command large enterprise accounts via deep social listening and CRM governance, the market does not exhibit winner-take-all dynamics. Instead, intense feature competition, platform API shifts, and creator-economy needs have created a thriving landscape of specialized mid-market SaaS providers, agency-focused schedulers, and high-growth open-source self-hosted alternatives. 🌐📈
+
+---
+
+## 🟦 SaaS / Hosted Platforms ☁️
+
+Below is a comparison of leading cloud-hosted commercial social media management platforms, sorted descending by company scale (enterprise valuation / annual revenue). 🏢💼
+
+| Platform 🏷️ | Starting Tier Pricing 💳 | Free Tier / Trial Limit 🎁 | Company Scale (Revenue / Valuation) 💰 | Key Focus & Strengths 🎯 |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Zoho Social](https://www.zoho.com/social/)** | **$10/month** (Standard plan billed annually, or $15/month billed monthly) | **Permanent Free Plan:** 1 Brand, 1 team member, 6 channels (X, Instagram Business, Facebook Page, LinkedIn Profile/Page, Google Business Profile) | **~$12.5B Valuation** (~$1.5B ARR across Zoho Corp, bootstrapped) | Deep integration with Zoho CRM & Zoho Desk; budget-friendly multi-channel publishing. |
 | **[Hootsuite](https://www.hootsuite.com/)** | **$99/month** (Standard plan billed annually, 1 user, 10 social accounts) | **No permanent free plan**; 14-day free trial limited to 10–20 daily posts | **~$1B Valuation** (~$350M–$400M ARR; PE/venture-backed) | Enterprise social governance, compliance workflows, multi-network monitoring, OwlyWriter AI. |
@@ -41,11 +57,11 @@ Below is a comparison of leading cloud-hosted commercial social media management
 
 ---
 
-## 🟩 Open-Source Software
+## 🟩 Open-Source Software 🔓
 
-Self-hosted, community-driven social media management and scheduling platforms. Repositories are ordered descending by GitHub stargazers.
+Self-hosted, community-driven social media management and scheduling platforms. Repositories are ordered descending by GitHub stargazers. 🌟🛠️
 
-| Project | Stars | Stack | Supported Networks | Key Features & Architecture |
+| Project 📦 | Stars ⭐ | Stack 💻 | Supported Networks 🌐 | Key Features & Architecture ⚡ |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Postiz](https://github.com/gitroomhq/postiz-app)** | [![GitHub stars](https://img.shields.io/github/stars/gitroomhq/postiz-app?style=social&color=white)](https://github.com/gitroomhq/postiz-app/stargazers) | TypeScript, Next.js, NestJS, PostgreSQL, Redis | X, LinkedIn, Instagram, TikTok, YouTube, Reddit, Pinterest, Facebook, Threads | Agentic social media management with AI content generation, Polotno visual designer, MCP server, public API, and automated social scheduling. AGPL-3.0. |
 | **[Easel](https://github.com/ZJU-REAL/Easel)** | [![GitHub stars](https://img.shields.io/github/stars/ZJU-REAL/Easel?style=social&color=white)](https://github.com/ZJU-REAL/Easel/stargazers) | Python, AI Agents, Multi-modal LLMs | Xiaohongshu, Douyin, Zhihu, Bilibili, WeChat, X | Autonomous AI agent for social media: trend tracking, automated copywriting, multi-modal asset creation, and one-click omni-channel publishing. Apache-2.0. |
@@ -62,9 +78,9 @@ Self-hosted, community-driven social media management and scheduling platforms. 
 
 ---
 
-## 📊 Feature Comparison Matrix
+## 📊 Feature Comparison Matrix ⚖️
 
-| Solution | Deployment | Starting Cost / License | Multi-Account | AI Copilot / MCP | Unified Inbox | Analytics & Reporting |
+| Solution 🛠️ | Deployment 🚀 | Starting Cost / License 🏷️ | Multi-Account 👥 | AI Copilot / MCP 🤖 | Unified Inbox 📥 | Analytics & Reporting 📈 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Zoho Social** | Cloud SaaS | Free forever / $10/mo | ✅ | Basic AI | Paid Tiers | Standard + CRM sync |
 | **Hootsuite** | Cloud SaaS | $99/mo | ✅ | OwlyWriter AI | ✅ Unified | Advanced Enterprise |
@@ -82,23 +98,40 @@ Self-hosted, community-driven social media management and scheduling platforms. 
 
 ---
 
-## 🔍 Keywords & Related Concepts
+## 🔍 Keywords & Related Concepts 🔑
 
-Social media management tools (SMMT), social media scheduler, open-source buffer alternative, open-source hootsuite alternative, automated content publisher, cross-platform social syndication, content calendar, unified social inbox, social media marketing automation, AI social copywriter, social media listening, Model Context Protocol (MCP) social scheduler, headless social posting API, self-hosted social marketing software.
-
----
-
-## 🤝 Contributing
-
-Contributions are very welcome! If you maintain or use a noteworthy open-source Social Media Management or Scheduling project, feel free to submit a pull request:
-
-1. Fork this repository.
-2. Add your project to the table with correct markdown links, stack, license, and star count badge.
-3. Ensure the project is actively maintained and relevant to social media publishing or management.
-4. Submit a descriptive Pull Request.
+Social media management tools (SMMT), social media scheduler, open-source buffer alternative, open-source hootsuite alternative, automated content publisher, cross-platform social syndication, content calendar, unified social inbox, social media marketing automation, AI social copywriter, social media listening, Model Context Protocol (MCP) social scheduler, headless social posting API, self-hosted social marketing software. 🔍✨
 
 ---
 
-## 📄 License
+## 🤝 Contributing 💡
 
-This repository and curated list are released under the [Creative Commons Zero v1.0 Universal (CC0 1.0)](LICENSE) Public Domain dedication. Software and trademarks mentioned remain properties of their respective owners.
+Contributions are warmly welcomed! If you maintain or use a noteworthy open-source Social Media Management or Scheduling project, feel free to submit a pull request: 🙌
+
+1. 🍴 Fork this repository.
+2. 📝 Add your project to the table with correct markdown links, stack, license, and star count badge.
+3. 🧪 Ensure the project is actively maintained and relevant to social media publishing or management.
+4. 🚀 Submit a descriptive Pull Request.
+
+---
+
+## 💖 Support & Community ☕
+
+Thank you so much for exploring this curated repository! If you find this list valuable, here are a few great ways you can support the project:
+
+- ⭐ **Star** this repository on GitHub to show your appreciation and boost its visibility.
+- 🍴 **Fork** and contribute tools, corrections, or updates.
+- 📢 **Share** this list with fellow developers, creators, marketers, and social media managers.
+- ☕ **Buy a Coffee / Sponsor**: Consider backing future open-source curation and developer tools via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007)! Every sponsorship and cup of coffee makes a huge difference! ☕💖
+
+---
+
+##  Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Social-Media-Management-Scheduling&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Social-Media-Management-Scheduling&type=date&legend=top-left)
+
+---
+
+## 📄 License 📜
+
+This repository and curated list are released under the [Creative Commons Zero v1.0 Universal (CC0 1.0)](LICENSE) Public Domain dedication. Software and trademarks mentioned remain properties of their respective owners. ⚖️
